@@ -1,5 +1,7 @@
-package `in`.programy.itunesapi
+package `in`.programy.itunesapi.ui
 
+import `in`.programy.itunesapi.R
+import `in`.programy.itunesapi.util.RvAdapter
 import `in`.programy.itunesapi.model.room.TunesDatabase
 import `in`.programy.itunesapi.repository.TunesRepository
 import `in`.programy.itunesapi.util.Resource
@@ -7,17 +9,13 @@ import `in`.programy.itunesapi.viewModel.TunesViewModel
 import `in`.programy.itunesapi.viewModel.TunesViewModelFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.GridLayout
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     lateinit var rvAdapter: RvAdapter

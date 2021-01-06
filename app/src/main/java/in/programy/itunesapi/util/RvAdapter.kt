@@ -1,5 +1,6 @@
-package `in`.programy.itunesapi
+package `in`.programy.itunesapi.util
 
+import `in`.programy.itunesapi.R
 import `in`.programy.itunesapi.model.room.Item
 import android.view.LayoutInflater
 import android.view.View
